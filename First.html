@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <h2>Output</h2>
+
+<body>
+    <script>
+        var mydate=new Date(),day=mydate.getDay();
+        var d;
+
+        d=["Sunday","Monday","Tuesday","Wedesday","Thursday","Friday","Saturday"]
+        var hr=mydate.getHours();
+        var H="AM"
+        if(hr>12)
+        {
+            hr=hr-12;
+            H="PM"
+        }
+        var min=mydate.getMinutes()
+        var sec=mydate.getSeconds()
+        document.writeln("<h3>Today is : " + d[day]+ ".<br>");
+        document.writeln("Current time is : " + hr+" "+ H+" : "+min +" : "+ sec+"</h3>");
+    </script>
+
+
+</body>
+
+
+
+
+</head>
+
+</html>
